@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name = "author" content = "Jen Faith"/>
+        <title>Document</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+
+            body {
+                font-family: 'Montserrat',sans-serif;
+                background-color: white;
+                font-size: 12;
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 3%;
+            }
+            img {
+                max-width: 100%;
+            }
+
+            h1{
+                margin: 2%;
+                color: #ff78d1;
+                font-size: 12px;
+            }
+
+            h2{
+                margin: 2%;
+                color: #ff78d1;
+                font-size: 16px;
+                padding-top: 2%;
+            }
+
+            h3{
+                margin: 2%;
+                font-size: 14;
+            }
+            p{
+                margin: 2%;
+                font-size: 12px;
+            }
+
+            hr{
+                height: 1px;
+                background-color: grey;
+                clear: both;
+                width: 96%;
+                margin:auto;
+            }
+            table{
+                margin: 2%;
+            }
+
+            #contact {
+                text-align: center;
+                padding-bottom: 3%;
+                font-size: 10px;
+            }
+
+            #kpis{
+                border-collapse: collapse;
+                padding: 3%;
+            }
+            #kpis tr:nth-child(odd){background-color: #f2f2f2;}
+            #kpis tr:hover {background-color: #ddd;}
+
+            #kpis td, #kpis th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+            #kpis th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                font-size: 12px;
+                text-align: left;
+                background-color: black;
+                color: white;
+            }
+            #kpis td {
+                font-size: 12px;
+            }
+            ul {
+                margin-left:6%;
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div id="banner">
+                    <img src="static/images/RPM_Email_Header.png" alt=""/>
+                </div>
+            </header>
+            <div class="one-col">
+                <h3>Hello,</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <h2>
+                    Function KPIs
+                </h2>
+                <table id="kpis">
+                    <tr>
+                      <th colspan="3">KPI Name - # of XYZ </th>
+                      <th>Goal</th>
+                      <th>Date</th>
+                      <th>Weekly Accomplishments</th>
+                      <th>Next Steps</th>
+                      <th>Insights</th>
+                    </tr>
+                    <tr>
+                      <td colspan="2">7 Days</td>
+                      <td>87%</td>
+                      <td rowspan="4">80%</td>
+                      <td rowspan="4">7/21/21</td>
+                      <td rowspan="4">Completed XYZ for ABC</td>
+                      <td rowspan="4">Discuss some something for next week.</td>
+                      <td rowspan="4">Really great insights into something.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">14 Days</td>
+                        <td>73%</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">21 Days</td>
+                      <td>81%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">30 Days</td>
+                        <td>90%</td>
+                    </tr>
+
+                </table>
+
+
+                <h2>
+                    BPM Activity
+                </h2>
+                <table id="kpis">
+                    <tr>
+                      <th>Activity</th>
+                      <th>Status</th>
+                      <th>Due Date</th>
+                      <th>Related Goal/KPI</th>
+                      <th colspan="3">Insights</th>
+                    </tr>
+                    <tr>
+                        <td>Something</td>
+                        <td>Not Started</td>
+                        <td>9/31/21</td>
+                        <td>N/A</td>
+                        <td colspan="3">Comment commnet comment comment comment comment comment</th>
+                      </tr>
+                  </table>
+                <h2>
+                    Relavent Links
+                </h2>
+                    <ul>
+                        <li>Link 1</li>
+                        <li>Link 2</li>
+                        <li>Link 3</li>
+                    </ul>
+                <h2>
+                    Upcomming Actions
+                </h2>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                    </ul>
+                <hr/>
+                <footer>
+                    <p id="contact">
+                        REEF Performance Management <br>
+                        78 SW 7th St.<br>
+                        Miami, FL33130<br>
+
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+    </body>
+</html>
