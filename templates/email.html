@@ -12,6 +12,18 @@
                 padding: 0;
                 border: 0;
             }
+            header {
+                background-color: black;
+            }
+            .container{
+                position: relative;
+                color:#ff78d1;
+            }
+            .date_format{
+                position: relative;
+                bottom: 40px;
+                right: 190px;
+            }
 
             body {
                 font-family: 'Montserrat',sans-serif;
@@ -64,18 +76,18 @@
                 font-size: 10px;
             }
 
-            #kpis{
+            #kp_format{
                 border-collapse: collapse;
                 padding: 3%;
             }
-            #kpis tr:nth-child(odd){background-color: #f2f2f2;}
+            #kp_format tr:nth-child(odd){background-color: #f2f2f2;}
             #kpis tr:hover {background-color: #ddd;}
 
-            #kpis td, #kpis th {
+            #kp_format td, #kpis th {
                 border: 1px solid #ddd;
                 padding: 8px;
             }
-            #kpis th {
+            #kp_format th {
                 padding-top: 12px;
                 padding-bottom: 12px;
                 font-size: 12px;
@@ -83,7 +95,7 @@
                 background-color: black;
                 color: white;
             }
-            #kpis td {
+            #kp_format td {
                 font-size: 12px;
             }
             ul {
@@ -98,55 +110,37 @@
         <div id="wrapper">
             <header>
                 <div id="banner">
-                    <img src="static/images/RPM_Email_Header.png" alt=""/>
+                    <div class = "container">
+                    <img src="https://live.staticflickr.com/65535/51336504991_1cb0332a40_z.jpg" alt=""/>
+                    <div class = "date_format">Date Holder</div>
+                    </div>
                 </div>
             </header>
             <div class="one-col">
-                <h3>Hello,</h3>
+                <h3>Hello {{first_name}},</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
 
                 <h2>
                     Function KPIs
                 </h2>
-                <table id="kpis">
-                    <tr>
-                      <th colspan="3">KPI Name - # of XYZ </th>
-                      <th>Goal</th>
-                      <th>Date</th>
-                      <th>Weekly Accomplishments</th>
-                      <th>Next Steps</th>
-                      <th>Insights</th>
-                    </tr>
-                    <tr>
-                      <td colspan="2">7 Days</td>
-                      <td>87%</td>
-                      <td rowspan="4">80%</td>
-                      <td rowspan="4">7/21/21</td>
-                      <td rowspan="4">Completed XYZ for ABC</td>
-                      <td rowspan="4">Discuss some something for next week.</td>
-                      <td rowspan="4">Really great insights into something.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">14 Days</td>
-                        <td>73%</td>
-                    </tr>
-                    <tr>
-                      <td colspan="2">21 Days</td>
-                      <td>81%</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">30 Days</td>
-                        <td>90%</td>
-                    </tr>
-
+                <table id="kp_format">
+                        <thead>
+                        <tr><th colspan='2'>kpi_1</th><th>Goal  </th><th>Date  </th><th>Weekly Accomplishments  </th><th>Next Steps  </th><th>Insights  </th></tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>7 Days </td><td>Seven_h   </td><td rowspan='4'>'Goal_h'</td><td rowspan='4'>date_h</td><td rowspan='4'>w_a_h</td><td rowspan='4'>next_h</td><td rowspan='4'>insight_h</td></tr>
+                        <tr><td>14 Days</td><td>fourteen_h</td></tr>
+                        <tr><td>21 Days</td><td>twenty1_h </td></tr>
+                        <tr><td>30 Days</td><td>thirty_h  </td></tr>
+                        </tbody>
                 </table>
 
 
                 <h2>
                     BPM Activity
                 </h2>
-                <table id="kpis">
+                <table id="kp_format">
                     <tr>
                       <th>Activity</th>
                       <th>Status</th>
@@ -177,7 +171,9 @@
                         <li>Item 1</li>
                         <li>Item 2</li>
                     </ul>
+                <br>
                 <hr/>
+                <br>
                 <footer>
                     <p id="contact">
                         REEF Performance Management <br>

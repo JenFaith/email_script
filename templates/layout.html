@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+
+<html lang="en">
+    <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+        * {
+          box-sizing: border-box;
+        }
+
+        body {
+                font-family: 'Montserrat',sans-serif;
+                background-color: white;
+                font-size: 12;
+                margin: 0 auto;
+                padding: 3%;
+            }
+        
+        .column1 {
+          float: left;
+          width: 70%;
+          padding: 10px;
+          height: 600px;
+        }
+        .column2 {
+          float: left;
+          width:  30%;
+          padding: 10px;
+          height: 600px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+          }
+        }
+        </style>
+    </head>
+    <body>
+        <h2>Email Template</h2>
+        <p>Directions Go Here.</p>
+        
+        <div class="row">
+          <div class="column1" style="background-color:#aaa;">
+            {% block body1%} {% endblock %}
+          </div>
+          <div class="column2" style="background-color:#bbb;">
+            {% block body2%} {% endblock %}
+          </div>
+        </div>
+    </body>
+
+</html>
